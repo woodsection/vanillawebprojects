@@ -1,0 +1,5 @@
+node_modules
+.vscode
+*eslint*
+package*.json
+.DS_Store

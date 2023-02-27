@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  background-color: #f9fafb;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  color: gray;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+  font-weight: 500;
+}
+
+form {
+  display: flex;
+  margin: 0;
+  height: 35vh;
+  width: 25vh;
+  background-color: white;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 3vh;
+  box-shadow: 0 0 5px #999;
+  border-radius: 5px;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.form-control.success .input-block {
+  border-color: green;
+}
+
+.form-control small {
+  visibility: hidden;
+}
+
+.form-control.error .input-block {
+  border-color: red;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: red;
+}
+
+.input-block {
+  display: flex;
+  outline: 0;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.input-block:focus {
+  border-color: #666;
+}
+
+.text, .password {
+  padding: 10px;
+  font-size: 14px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-action button {
+  justify-content: center;
+  margin-bottom: 5px;
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #3498DB;
+}
+
+.cancle-btn {
+  background-color: #666;
+}

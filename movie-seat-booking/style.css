@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  height: 100vh;
+  background-color: #242333;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+div {
+  display: flex;
+}
+
+body>div {
+  margin: 10px;
+  width: 350px;
+  justify-content: center;
+}
+
+.titleBox * {
+  margin: 5px;
+  padding: 5px 0px;
+}
+
+.movieList {
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 5px;
+  padding: 0px 15px;
+}
+
+.legendBox {
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+}
+
+.seatTypeList {
+  display: flex;
+  font-size: small;
+  color: #666;
+  list-style-type: none;
+}
+
+.seatTypeList li {
+  display: flex;
+  margin: 5px;
+}
+
+.seat {
+  width: 15px;
+  height: 15px;
+  margin: 0px 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #444451;
+}
+
+.select {
+  background-color: #6feaf6;
+}
+
+.occupied {
+  background-color: #ffffff;
+  cursor: default;
+}
+
+.screen {
+  height: 0;
+  margin: 20px 0px;
+  border-top: 70px solid white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  box-shadow: 0px 3px 10px rgb(255, 255, 255, 0.8);
+}
+
+/* .screen {
+  height: 70px;
+  background-color: white;
+  margin: 20px 0px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+  filter: brightness(1.2);
+} */
+
+.cinemaBox {
+  flex-direction: column;
+}
+
+.seatList {
+  flex-direction: column;
+}
+
+.row {
+  width: 100%;
+  margin-top: 5px;
+  justify-content: space-between;
+}
+
+.row>.seat {
+  margin: 0px 0px;
+}
+
+.row>.seat:not(.occupied) {
+  cursor: pointer;
+}
+
+.row>div.seat:nth-child(2),
+.row>div.seat:nth-child(6),
+.row>div.seat:nth-child(10) {
+  margin-right: 5%;
+}
+
+.desc {
+  color: #6feaf6;
+}
