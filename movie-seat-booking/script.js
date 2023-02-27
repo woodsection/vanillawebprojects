@@ -1,4 +1,3 @@
-// /* eslint-disable no-restricted-syntax */
 const { localStorage } = window;
 
 const movieSelectEl = document.getElementById("movieList");
@@ -34,18 +33,11 @@ function updateLocalStorage() {
 }
 
 function updateView() {
-  selectedSeats =
-    localStorage.getItem("selectedSeats") !== null
-      ? JSON.parse(localStorage.getItem("selectedSeats"))
-      : [];
-  selectedMovieIndex =
-    localStorage.getItem("selectedMovieIndex") !== null
-      ? localStorage.getItem("selectedMovieIndex")
-      : 0;
+  selectedSeats = JSON.parse(localStorage.getItem("selectedSeats")) || [];
+  selectedMovieIndex = localStorage.getItem("selectedMovieIndex") || 0;
   selectedMoviePrice =
-    localStorage.getItem("selectedMoviePrice") !== null
-      ? localStorage.getItem("selectedMoviePrice")
-      : movieSelectEl.options[0].value;
+    localStorage.getItem("selectedMoviePrice") ||
+    movieSelectEl.options[0].value;
 
   selectedSeats.forEach(v => {
     const seat = seatEl.item(v);
