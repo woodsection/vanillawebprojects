@@ -1,8 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
+  height: 100vh;
   background-color: #f9fafb;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 label {
@@ -17,19 +23,19 @@ h2 {
 
 form {
   display: flex;
-  margin: 0;
-  height: 35vh;
+  flex-flow: column;
+  height: 40vh;
   width: 25vh;
   background-color: white;
-  flex-flow: column;
   justify-content: space-between;
-  padding: 3vh;
+  padding: 30px;
   box-shadow: 0 0 5px #999;
   border-radius: 5px;
 }
 
-.form-control {
-  width: 100%;
+.form-control, .form-action {
+  display: flex;
+  flex-direction: column;
 }
 
 .form-control.success .input-block {
@@ -50,30 +56,22 @@ form {
 }
 
 .input-block {
-  display: flex;
   outline: 0;
-  width: 100%;
   border-radius: 5px;
+  padding: 10px;
 }
 
 .input-block:focus {
   border-color: #666;
 }
 
-.text, .password {
-  padding: 10px;
-  font-size: 14px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-}
-
 .form-action button {
-  justify-content: center;
-  margin-bottom: 5px;
+  margin: 2px;
   padding: 10px;
   color: white;
-  border: none;
+  border-color: transparent;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .submit-btn {
