@@ -24,8 +24,7 @@ h2 {
 form {
   display: flex;
   flex-flow: column;
-  height: 40vh;
-  width: 25vh;
+  width: 300px;
   background-color: white;
   justify-content: space-between;
   padding: 30px;
