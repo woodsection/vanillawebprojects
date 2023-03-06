@@ -26,7 +26,6 @@ form {
   flex-flow: column;
   width: 300px;
   background-color: white;
-  justify-content: space-between;
   padding: 30px;
   box-shadow: 0 0 5px #999;
   border-radius: 5px;
@@ -55,13 +54,12 @@ form {
 }
 
 .input-block {
-  outline: 0;
   border-radius: 5px;
   padding: 10px;
 }
 
 .input-block:focus {
-  border-color: #666;
+  outline-color: #666;
 }
 
 .form-action button {

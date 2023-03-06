@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #666;
+}
+
+body > div {
+  display: flex;
+}
+
+h1 {
+  color: white;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+video {
+  width: 60vh;
+  height: 30vh;
+}
+
+.progress__filled {
+  color: black;
+}

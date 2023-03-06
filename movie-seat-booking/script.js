@@ -26,7 +26,6 @@ function updateDescription() {
 }
 
 function updateLocalStorage() {
-  selectedSeats.sort();
   localStorage.setItem("selectedSeats", JSON.stringify(selectedSeats));
   localStorage.setItem("selectedMovieIndex", selectedMovieIndex);
   localStorage.setItem("selectedMoviePrice", selectedMoviePrice);

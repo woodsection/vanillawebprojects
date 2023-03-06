@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 30px;
+}
+
+h2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.vertical {
+  margin: 0px 20px;
+}
+
+.horizontal {
+  margin: 10px 0px;
+}
+
+body {
+  display: flex;
+  background-color: #f4f4f4;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+.content > h2 > p:last-child {
+  font-weight: 400;
+}
+
+.persons {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+}
+
+.persons li {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.wealth::before {
+  content: "$";
+}
+
+.total {
+  display: flex;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: white;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px;
+  width: 200px;
+  height: 40px;
+}

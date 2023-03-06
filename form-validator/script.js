@@ -65,7 +65,7 @@ function validate(formControls) {
   }
 }
 
-signupBtn.addEventListener("click", e => {
+signupForm.addEventListener("click", e => {
   e.preventDefault();
   const formControls = new Map();
   for (const div of signupForm.children) {
@@ -77,3 +77,7 @@ signupBtn.addEventListener("click", e => {
   }
   validate(formControls);
 });
+
+// TODO: refactoring
+// email type -> text
+// use form type
