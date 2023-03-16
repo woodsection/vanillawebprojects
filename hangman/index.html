@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+  <h1>Hangman</h1>
+  <p>Find the hidden word - Enter a letter</p>
+
+  <div id="gameBox" class="gameBox">
+    <svg id="hangman" class="hangman" height="250" width="200">
+      <line x1="61" x2="139" y1="20" y2="20" />
+      <line x1="140" x2="140" y1="21" y2="50" />
+      <line x1="60" x2="60" y1="21" y2="229" />
+      <line x1="20" x2="100" y1="230" y2="230" />
+
+      <circle id="h" class="bodyPart" cx="139" cy="70" r="20" fill="none" />
+
+      <line id="w" class="bodyPart" x1="139" x2="139" y1="90" y2="130" />
+
+      <line id="la" class="bodyPart" x1="139" x2="115" y1="115" y2="100" />
+      <line id="ra" class="bodyPart" x1="139" x2="163" y1="115" y2="100" />
+
+      <line id="ll" class="bodyPart" x1="139" x2="115" y1="130" y2="170" />
+      <line id="rl" class="bodyPart" x1="139" x2="163" y1="130" y2="170" />
+    </svg>
+
+    <div id="wrongBox" class="wrongBox">
+      <p>Wrong</p>
+      <h2></h2>
+    </div>
+  </div>
+  <div id="word" class="word"></div>
+
+  <div class="modal" id="modal">
+    <h2 id="msg">Congratulations! You won! 😃</h2>
+    <button onclick="initialize()">Play Again</button>
+  </div>
+  
+  <div class="toast" id="toast">
+    <p>You have already entered this letter</p>
+  </div>
+
+  <div class="modalScreen" id="modalScreen"></div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

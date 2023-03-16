@@ -1,0 +1,112 @@
+body {
+  background-color: #34495e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+body>p {
+  margin-bottom: 20%;
+}
+
+.gameBox {
+  display: flex;
+}
+
+.wrongBox {
+  visibility: hidden;
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.wrongBox.show {
+  visibility: visible;
+}
+
+.word {
+  display: flex;
+  width: 100%;
+  height: 90px;
+  justify-content: center;
+}
+
+.alphabet {
+  display: flex;
+  border-bottom: 3px solid #2980b9;
+  justify-content: center;
+  margin-left: 5px;
+  width: 20px;
+}
+
+svg {
+  stroke-width: 5;
+  stroke: white;
+  stroke-linecap: round;
+}
+
+.bodyPart {
+  /* display: none; */
+  visibility: hidden;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 40%;
+  z-index: 5;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2980b9;
+  border: 0;
+  border-radius: 5px;
+  width: 400px;
+  height: 150px;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal button {
+  cursor: pointer;
+  color: #2980b9;
+  padding: 10px 15px;
+  border: 0;
+  background-color: white;
+}
+
+.toast {
+  position: fixed;
+  bottom: 0px;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.toast.show {
+  transform: translateY(0%);
+}
+
+.modalScreen {
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0 0 0 / 0.3);
+}
+
+.modalScreen.show {
+  display: block;
+}
