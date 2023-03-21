@@ -1,0 +1,153 @@
+body {
+  background-color: #2d2013;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+main {
+  max-width: 800px;
+}
+
+header h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+}
+.titleBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchInput {
+  padding-left: 10px;
+  border: 0;
+  border-radius: 5px;
+  width: 350px;
+  height: 30px;
+}
+
+.searchBtn, .randomBtn {
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  padding: 8px 10px 8px 10px;
+}
+
+.searchBtn {
+  border-radius: 0 5px 5px 0;
+  margin-left: -30px;
+  margin-right: 10px;
+}
+
+.searchMsg {
+  color: white;
+  font-weight: 700;
+}
+
+.galleryBox.disable {
+  display: none;
+}
+
+.galleryBox {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(185px, 1fr));
+  grid-auto-rows: minmax(185px, auto);
+  grid-gap: 20px;
+}
+
+.galleryImg, .detailImg {
+  border: 5px solid white;
+}
+
+.galleryImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-image: url("https://www.themealdb.com/images/media/meals/wpputp1511812960.jpg");
+  background-size: cover;
+}
+
+.galleryImg>span {
+  color: white;
+  opacity: 0;
+}
+
+.galleryImg:hover {
+  filter: brightness(60%);
+  transition: opacity 0.3s;
+}
+
+.galleryImg:hover>span {
+  opacity: 1;
+}
+
+@media (max-width: 850px) {
+  .galleryBox {
+    grid-template-columns: repeat(3, minmax(185px, 1fr));
+  }
+}
+@media (max-width: 650px) {
+  .galleryBox {
+    grid-template-columns: repeat(2, minmax(185px, 1fr));
+  }
+}
+@media (max-width: 450px) {
+  .galleryBox {
+    grid-template-columns: repeat(1, minmax(185px, 1fr));
+  }
+}
+
+.detailBox.disable {
+  display: none;
+}
+
+.detailBox * {
+  margin: 10px;
+}
+.detailBox {
+  width: 500px;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.detailImg {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-image: url("https://www.themealdb.com/images/media/meals/wpputp1511812960.jpg");
+}
+.detailTagBox {
+  width: 100%;
+  text-align: center;
+  border: dashed 3px orange
+}
+.detailTitle {
+  font-size: 40px;
+  font-weight: 900;
+}
+.detailIngredientsBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.detailIngredient {
+  font-weight: 800;
+  margin: 5px;
+  padding: 5px;
+  background-color: white;
+  color: black;
+  border: 0;
+  border-radius: 5px;
+}

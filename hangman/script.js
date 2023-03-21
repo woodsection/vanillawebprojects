@@ -51,7 +51,7 @@ function showModal(msg) {
 function checkGameSet() {
   if (selectedWord.length === correctWordNumber) {
     showModal("Congratulations! You won! 😃");
-  } else if (wrongAlphabets.length === 6) {
+  } else if (wrongAlphabets.length >= 6) {
     showModal("Unfortunately you lost. 😕");
   }
 }
@@ -94,12 +94,10 @@ function checkKey(alphabet) {
 window.addEventListener("keypress", e => {
   if (/^[a-zA-Z]+$/.test(e.key)) {
     if (correctAlphabets.includes(e.key) || wrongAlphabets.includes(e.key)) {
+      toastEl.classList.add("show");
       setTimeout(() => {
-        toastEl.classList.add("show");
-        setTimeout(() => {
-          toastEl.classList.remove("show");
-        }, 1000);
-      }, 100);
+        toastEl.classList.remove("show");
+      }, 2000);
     } else {
       checkKey(e.key);
     }

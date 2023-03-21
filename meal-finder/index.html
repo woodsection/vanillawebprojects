@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Finder</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    type="text/css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>Meal Finder</h1>
+    </div>
+    <div class="titleBox">
+      <input id="searchInput" class="searchInput" placeholder="Search for meals or keywords">
+      <button id="searchBtn" class="searchBtn">
+        <i class="fas fa-search"></i>
+      </button>
+      <button id="randomBtn" class="randomBtn">
+        <i class="fas fa-random"></i>
+      </button>
+    </div>
+    <p id="searchMsg" class="searchMsg"></p>
+  </header>
+
+  <main>
+    <article id="galleryBox" class="galleryBox disable">
+      <div class="galleryImg"><span>test1</span></div>
+      <div class="galleryImg"><span>test2</span></div>
+      <div class="galleryImg"><span>test3</span></div>
+      <div class="galleryImg"><span>test4</span></div>
+      <div class="galleryImg"><span>test5</span></div>
+    </article>
+
+    <article id="detailBox" class="detailBox disable">
+      <p id="detailTitle" class="detailTitle"></p>
+      <div id="detailImg" class="detailImg"></div>
+      <div id="detailTagBox" class="detailTagBox"> </div>
+      <p id="foodInstructions" class="foodInstructions"></p>
+      <div id="detailIngredientsBox" class="detailIngredientsBox"></div>
+    </article>
+  </main>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

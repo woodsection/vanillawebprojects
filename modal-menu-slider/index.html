@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,9 @@
   <title>My Landing Page</title>
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
+
 <body>
   <nav>
-    <div id="modalScreen" class="modalScreen" onclick="modal()"></div>
     <div>
       <div class="profileBox">
         <img class="profile" src="img/profile.jpg">
@@ -22,45 +23,53 @@
       <li><a href="#">Contact Me</a></li>
     </ul>
   </nav>
+  <main>
+    <header>
+      <div id="menuBtn" onclick="menuToggle()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="headerContent">
+        <h1>My Landing Page</h1>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, amet!</h3>
+        <button onclick="modal()">Sign Up</button>
+      </div>
+    </header>
 
-  <header>
-    <div id="menuBtn" onclick="menuToggle()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div id="headerContent">
-      <h1>My Landing Page</h1>
-      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, amet!</h3>
-      <button onclick="modal()">Sign Up</button>
-    </div>
-  </header>
+    <article>
+      <h2>What is this landing page about?</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iure accusamus ab consectetur eos provident
+        ipsa est
+        perferendis architecto. Provident, quaerat asperiores. Quo esse minus repellat sapiente, impedit obcaecati
+        necessitatibus.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio officia ipsa. Cum dignissimos possimus
+        et non
+        provident facilis saepe!</p>
 
-  <article>
-    <h2>What is this landing page about?</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iure accusamus ab consectetur eos provident ipsa est
-    perferendis architecto. Provident, quaerat asperiores. Quo esse minus repellat sapiente, impedit obcaecati
-    necessitatibus.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio officia ipsa. Cum dignissimos possimus et non
-    provident facilis saepe!</p>
+      <h2>Tell Me More</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eaque delectus explicabo qui reprehenderit?
+        Aspernatur ad similique minima accusamus maiores accusantium libero autem iusto reiciendis ullam impedit esse
+        quibusdam,
+        deleniti laudantium rerum beatae, deserunt nemo neque, obcaecati exercitationem sit. Earum.</p>
 
-    <h2>Tell Me More</h2>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eaque delectus explicabo qui reprehenderit?
-    Aspernatur ad similique minima accusamus maiores accusantium libero autem iusto reiciendis ullam impedit esse quibusdam,
-    deleniti laudantium rerum beatae, deserunt nemo neque, obcaecati exercitationem sit. Earum.</p>
-    
-    <h2>Benefits</h2>
-    <ul>
-      <li>Lifetime Access</li>
-      <li>30 Day Money Back</li>
-      <li>Tailored Customer Support</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse quam nostrum, fugiat, itaque natus officia laborum
-    dolorum id accusantium culpa architecto tenetur fuga? Consequatur provident rerum eius ratione dolor officiis doloremque
-    minima optio dignissimos doloribus odio debitis vero cumque itaque excepturi a neque, expedita nulla earum accusamus
-    repellat adipisci veritatis quam. Ipsum fugiat iusto pariatur consectetur quas libero dolor dolores dolorem, nostrum
-    ducimus doloremque placeat accusamus iste, culpa quaerat consequatur?</p>
-  </article>
+      <h2>Benefits</h2>
+      <ul>
+        <li>Lifetime Access</li>
+        <li>30 Day Money Back</li>
+        <li>Tailored Customer Support</li>
+      </ul>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse quam nostrum, fugiat, itaque natus officia
+        laborum
+        dolorum id accusantium culpa architecto tenetur fuga? Consequatur provident rerum eius ratione dolor officiis
+        doloremque
+        minima optio dignissimos doloribus odio debitis vero cumque itaque excepturi a neque, expedita nulla earum
+        accusamus
+        repellat adipisci veritatis quam. Ipsum fugiat iusto pariatur consectetur quas libero dolor dolores dolorem,
+        nostrum
+        ducimus doloremque placeat accusamus iste, culpa quaerat consequatur?</p>
+    </article>
+  </main>
 
   <div class="modal" id="modal">
     <div class="modalHeader">
@@ -94,4 +103,5 @@
   <div id="modalScreen" class="modalScreen" onclick="modal()"></div>
   <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>

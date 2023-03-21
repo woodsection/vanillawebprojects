@@ -3,11 +3,11 @@
   padding: 0;
 }
 
-body {
+main {
   transition: transform 0.3s ease;
 }
 
-body.nav {
+main.nav {
   transform: translateX(200px);
 }
 
@@ -30,7 +30,7 @@ nav {
   background-color: #30336b;
   border-right: 2px solid rgba(200, 200, 200, 0.1);
   color: #fff;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 200px;
@@ -79,11 +79,6 @@ article {
   max-width: 800px;
   padding: 15px;
   margin: 0 auto;
-}
-
-#test {
-  width: 100px;
-  background-color: #30336b;
 }
 
 header {
@@ -205,8 +200,8 @@ header {
 }
 
 .modalScreen.show {
-  width: 1000vh;
-  height: 1000vh;
+  width: 100vw;
+  height: 100vh;
   z-index: 3;
   position: fixed;
   top: 0;

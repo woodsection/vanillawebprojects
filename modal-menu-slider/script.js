@@ -1,8 +1,9 @@
 function menuToggle(e) {
-  if (document.body.classList.contains("nav")) {
-    document.body.classList.remove("nav");
+  const mainEl = document.querySelector("main");
+  if (mainEl.classList.contains("nav")) {
+    mainEl.classList.remove("nav");
   } else {
-    document.body.classList.add("nav");
+    mainEl.classList.add("nav");
   }
 }
 
