@@ -1,0 +1,59 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  position: relative;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+main.load table {
+  visibility: hidden;
+}
+
+main.load span {
+  visibility: hidden;
+}
+
+main.load img {
+  display: block;
+}
+
+table tr:first-child {
+  font-size: 1.5em;
+}
+
+table td {
+  width: 150px;
+}
+
+img {
+  display: none;
+  position: fixed;
+  top: 50%;
+  z-index: 10;
+}
+
+#comming-year {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  font-size: 200px;
+  color: white;
+  opacity: 0.3;
+}
+

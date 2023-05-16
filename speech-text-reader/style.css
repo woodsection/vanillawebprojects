@@ -1,0 +1,146 @@
+body {
+  background-color: #ffefea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(185px, 1fr));
+  grid-auto-rows: minmax(185px, auto);
+  grid-gap: 20px;
+  width: 100%;
+}
+
+.toggleBtn {
+  background-color: darksalmon;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: darksalmon;
+  box-shadow: 0 0 0 transparent;
+  transition: box-shadow 2s ease-in-out;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card:active {
+  box-shadow: 0 0 30px darksalmon;
+  transition: none;
+}
+
+.cardImg {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+
+.cardTextBox {
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.cardText {
+  font-size: larger;
+}
+
+@media (max-width: 850px) {
+  main {
+    grid-template-columns: repeat(3, minmax(185px, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  main {
+    grid-template-columns: repeat(2, minmax(185px, 1fr));
+  }
+}
+
+@media (max-width: 450px) {
+  main {
+    grid-template-columns: repeat(1, minmax(185px, 1fr));
+  }
+}
+
+.modal {
+  position: absolute;
+  background-color: #333;
+  width: 50%;
+  height: 300px;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  visibility: hidden;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+.modal.show {
+  visibility: visible;
+  transition: top 0.5s ease-in-out;
+  /* transform: translate(); */
+}
+
+.modalTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.modalTitle p {
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.modalForm {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.modalForm * {
+  margin-top: 10px;
+}
+
+.voices {
+  background-color: darksalmon;
+  color: white;
+  padding: 5px;
+}
+
+.modalBtn {
+  background-color: darksalmon;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.readText {
+  border-radius: 5px;
+  height: 120px;
+  padding: 10px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speech Text Reader</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+  <header>
+    <h1>Speech Text Reader</h1>
+    <button id="toggleBtn" class="toggleBtn">Toggle Text Box</button>
+  </header>
+  <main></main>
+  <footer></footer>
+
+  <div id="modal" class="modal">
+    <div id="modalTitle" class="modalTitle">
+      <h3>Choose Voice</h3>
+      <p id="modalClose" class="modalClose">X</p>
+    </div>
+    <form id="modalForm" class="modalForm">
+      <select form="modalForm" id="voices" class="voices"></select>
+      <textarea form="modalForm" id="readText" class="readText" placeholder="Enter text to read..."></textarea>
+      <button id="modalBtn" class="modalBtn" type="submit">Read Text</button>
+    </form>
+  </div>
+  
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

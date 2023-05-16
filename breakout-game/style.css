@@ -1,0 +1,55 @@
+body {
+  background-color: #0095dd;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.rule {
+  position: fixed;
+  top: 0;
+  left: -600px;
+  width: 500px;
+  padding: 10px;
+  height: 100%;
+  background-color: #333;
+  transition: left 0.5s ease-in-out;
+  color: white;
+}
+
+.rule-btn {
+  position: absolute;
+  outline: 0;
+  top: 30px;
+  right: 30px;
+}
+
+.rule-btn:active~.rule {
+  left: 0;
+}
+
+.play-ground {
+  background-color: white;
+  width: 800px;
+  height: 600px;
+  border-radius: 5px;
+}

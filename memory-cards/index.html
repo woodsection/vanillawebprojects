@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+  <div id="cardTitleBox" class="cardTitleBox">
+    <h1>Memory Cards </h1>
+    <button id="addNewCardBtn"><i class="fa-solid fa-plus"></i> Add New Card</button>
+  </div>
+  <div id="cardBox" class="cardBox">
+  </div>
+  <div class="paging">
+    <p id="beforeBtn"><i class="fa-solid fa-arrow-left"></i></p>
+    <p id="pagingText"></p>
+    <p id="nextBtn"><i class="fa-solid fa-arrow-right"></i></p>
+  </div>
+  <button id="clearCardsBtn"><i class="fa-solid fa-trash"></i> Clear Cards</button>
+
+  <div id="addCardBox">
+    <form id="addCardForm">
+      <div id="cardTitleBox" class="cardTitleBox">
+        <h1>Add New Card</h1>
+        <button id="close">X</button>
+      </div>
+      <div class="formInput">
+        <label for="question">Question</label>
+        <textarea id="question" name="question" cols="30" rows="2" placeholder="Enter question..."></textarea><br>
+      </div>
+      <div class="formInput">
+        <label for="answer">Answer</label>
+        <textarea id="answer" name="answer" cols="30" rows="2" placeholder="Enter Answer..."></textarea><br>
+      </div>
+      <button id="addCardBtn" type="button"><i class="fa-solid fa-plus"></i> Add Card</button>
+    </form>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
